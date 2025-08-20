@@ -1,0 +1,36 @@
+.calendarWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rdrCalendarWrapper {
+    width: 300px;
+}
+
+.rdrDateDisplayWrapper {
+    display: none;
+}
+
+.rdrMonthName {
+    display: none;
+}
+
+.rdrWeekDays {
+    font-size: 0;
+
+    ::first-letter {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+
+.rdrMonthPicker > select {
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.rdrYearPicker > select {
+    font-size: 15px;
+}
