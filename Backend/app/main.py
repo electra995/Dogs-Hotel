@@ -26,6 +26,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  # frontend Vite dev
+        "https://dogs-hotel.vercel.app",  # prod
     ],
     allow_credentials=True,
     allow_methods=["*"],
