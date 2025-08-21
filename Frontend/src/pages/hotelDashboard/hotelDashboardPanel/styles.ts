@@ -5,14 +5,27 @@ export const StyledHotelDashboardPanel = styled.div`
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    padding-top: 10px;
-    margin-left: 60px;
+    padding: 10px 20px;
+    margin-left: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        margin-left: 60px;
+        padding: 10px 0;
+    }
 `;
 
 export const FirstRow = styled.div`
     display: flex;
+    flex-direction: column;
     gap: 80px;
     width: 100%;
+    
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        gap: 80px;
+    }
 `;
 
 export const GuestsBox = styled.div`
@@ -20,7 +33,7 @@ export const GuestsBox = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 2000px;
+    width: 78%;
 `;
 
 export const GuestsTitle = styled.h1`
@@ -99,7 +112,7 @@ export const OccupantsBox = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 2000px;
+    width: 78%;
 `;
 
 export const OccupantsTitle = styled.h1`
@@ -154,6 +167,12 @@ export const OccupantServiceBox = styled.div`
     text-transform: uppercase;
     display: flex;
     gap: 20px;
+    
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 `;
 
 export const OccupantService = styled.span`
