@@ -19,12 +19,14 @@ import LodgingCard from "../../components/lodgingCard/LodgingCard.jsx";
 import Button from "../../components/button/Button.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 
+import { useNavigate } from "react-router-dom";
 import {AuthProvider, useAuth} from "../../context/authContext.jsx";
 import {useLodgings} from "../../context/lodgingContext.jsx";
 
 const HomeContent = () => {
     const {lodgings, loading, error} = useLodgings();
     const {user} = useAuth();
+    const navigate = useNavigate();
 
     return (
         <StyledHome>
@@ -64,7 +66,7 @@ const HomeContent = () => {
                                 fontWeight="500"
                                 padding="8px 18px"
                                 fontSize="16px"
-                                onClick={() => window.location.href = "/hotel-dashboard"}
+                                onClick={() => navigate("/hotel-dashboard")}
                             >
                                 Vai alla Dashboard {">"}
                             </Button>
@@ -83,7 +85,7 @@ const HomeContent = () => {
                                     fontWeight="500"
                                     padding="8px 18px"
                                     fontSize="16px"
-                                    onClick={() => window.location.href = "/lodgings"}
+                                    onClick={() => navigate("/lodgings")}
                                 >
                                     Mostra altro {">"}
                                 </Button>

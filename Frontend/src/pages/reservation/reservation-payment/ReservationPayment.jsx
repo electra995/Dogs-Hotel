@@ -268,7 +268,7 @@ const ReservationPayment = () => {
                             width="10%"
                             onClick={handleBookingClick}
                         >
-                            Paga e prenota
+                            Paga
                         </Button>
                     </ButtonRow>
                 </ReservationPaymentSection>

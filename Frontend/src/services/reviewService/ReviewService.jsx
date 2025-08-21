@@ -2,7 +2,7 @@ import {API_BASE_URL} from "../../config/config.jsx";
 
 
 export async function getReviews() {
-    const res = await fetch(`${API_BASE_URL}/reviews/`, {
+    const res = await fetch(`${API_BASE_URL}/reviews`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",

@@ -120,7 +120,7 @@ const Register = () => {
                             onClick={() => handleRoleSelect("guest")}
                             value={formData.role}
                         >
-                            Sono un Ospite
+                            Ospite
                         </Button>
                         <Button
                             padding="12px 34px"
@@ -133,7 +133,7 @@ const Register = () => {
                             onClick={() => handleRoleSelect("employee")}
                             value={formData.role}
                         >
-                            Sono un Dipendente
+                            Dipendente
                         </Button>
                     </OptionContainer>
                     <Form onSubmit={handleSubmit}>

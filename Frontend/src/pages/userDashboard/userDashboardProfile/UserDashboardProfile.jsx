@@ -117,7 +117,7 @@ const UserDashboardProfile = () => {
             email: profile.email,
         };
 
-        await updateUserProfile(payload)
+        await updateUserProfile(user.id, payload)
             .then(() => {
                 setSnackbar({
                     open: true,
