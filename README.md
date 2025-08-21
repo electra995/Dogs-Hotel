@@ -113,10 +113,10 @@ che lo gestirà.
    ```bash
    pip install -r requirements.txt
    ```
-4. **Crea il file di ambiente `.env`** nella cartella `Backend`. Aggiungi la seguente riga, modificandola se hai usato
+4. **Modifica il file di ambiente `.env`** nella cartella `Backend`. Modifica la seguente riga se hai usato
    credenziali diverse:
    ```env
-   DATABASE_URL=postgresql://fastapi_user:password@localhost:5432/prenotazioni_db2
+   DATABASE_URL=postgresql://fastapi_user:password@localhost:5432/prenotazioni_db
    ```
 5. **Avvia il server backend**:
    ```bash
@@ -152,7 +152,7 @@ L'applicazione sarà pronta per essere utilizzata. Potrai registrare nuovi utent
 
 Puoi accedere con un account già presente nel database utilizzando le seguenti credenziali:
 
-- **Email**: `prova2@gmail.com`  
+- **Email**: `user@gmail.com`  
 - **Password**: `1234567890`  
 
 Questo utente ha già dei dati registrati e alcune prenotazioni a diverse strutture.  
@@ -173,7 +173,7 @@ Le funzionalità disponibili includono:
 
 Puoi accedere con un account **admin** già presente nel database utilizzando le seguenti credenziali:
 
-- **Email**: `prova@gmail.com`  
+- **Email**: `admin@gmail.com`  
 - **Password**: `1234567890`  
 
 Questo account dispone già di dati relativi a un hotel e prenotazioni effettuate dagli utenti.  
