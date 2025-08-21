@@ -3,8 +3,8 @@ import {AuthProvider} from "./context/authContext.jsx";
 import {LodgingsProvider} from "./context/lodgingContext.jsx";
 
 // Route protection
-import {PrivateGuestRoute} from "./services/privateRoutesService/privateRoutesService.jsx";
-import {PrivateAdminRoute} from "./services/privateRoutesService/privateRoutesService.jsx";
+import {PrivateGuestRoute} from "./services/privateRoutesService/PrivateRoutesService.jsx";
+import {PrivateAdminRoute} from "./services/privateRoutesService/PrivateRoutesService.jsx";
 
 // Public pages
 import Home from "./pages/home/Home.jsx";
