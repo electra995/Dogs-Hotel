@@ -114,7 +114,7 @@ che lo gestirà.
    pip install -r requirements.txt
    ```
 4. **Modifica il file di ambiente `.env`** nella cartella `Backend`. Modifica la seguente riga se hai usato
-   credenziali diverse:
+   credenziali, user o il nome del db diverso:
    ```env
    DATABASE_URL=postgresql://fastapi_user:password@localhost:5432/prenotazioni_db
    ```
@@ -125,6 +125,9 @@ che lo gestirà.
    Il backend sarà in esecuzione su `http://127.0.0.1:8000`.
 
 ### 4. Setup del Frontend
+
+Prima di avviare il frontend, è necessario modificare il file `Fronted/src/config/config.jsx` e commentare
+la riga con l'URL di Railway e usare il localhost.
 
 1. Apri un nuovo terminale e **naviga nella cartella del frontend**:
    ```bash
