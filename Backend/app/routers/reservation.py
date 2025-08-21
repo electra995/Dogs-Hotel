@@ -16,7 +16,7 @@ def get_reservations_with_user(hotel_id: int, db: Session = Depends(get_db)):
     return reservation_crud.get_reservations(hotel_id, db)
 
 
-@router.put("/", response_model=ReservationBase)
+@router.put("", response_model=ReservationBase)
 def create_reservation(
     reservation_data: ReservationRequest, db: Session = Depends(get_db)
 ):

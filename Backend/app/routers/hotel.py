@@ -7,7 +7,7 @@ from app.schemas import LodgingResponse, HotelBase, HotelProfileUpdate
 router = APIRouter(prefix="/lodgings", tags=["Hotel"])
 
 
-@router.get("/", response_model=LodgingResponse)
+@router.get("", response_model=LodgingResponse)
 def get_lodgings(db: Session = Depends(get_db)):
     return hotel_crud.get_hotels(db)
 

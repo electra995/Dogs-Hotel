@@ -9,6 +9,6 @@ from app.schemas import (
 router = APIRouter(prefix="/reviews", tags=["Review"])
 
 
-@router.get("/", response_model=ReviewResponse)
+@router.get("", response_model=ReviewResponse)
 def read_reviews(db: Session = Depends(get_db)):
     return review_crud.get_reviews(db)
