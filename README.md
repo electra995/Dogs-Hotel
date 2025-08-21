@@ -120,7 +120,7 @@ che lo gestirà.
    ```
 5. **Avvia il server backend**:
    ```bash
-   uvicorn app.main:app --reload
+   uvicorn app.main:app --host 0.0.0.0 --reload --port 8000
    ```
    Il backend sarà in esecuzione su `http://127.0.0.1:8000`.
 
