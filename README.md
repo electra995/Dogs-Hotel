@@ -34,24 +34,14 @@ Questo progetto è stato sviluppato utilizzando un frontend in **React** e un ba
 |------------------------------------------|-----------------------------------|---------------------------------------|
 | ![React Badge][react-badge]              | ![Python Badge][python-badge]     | ![PostgreSQL Badge][postgres-badge]   |
 | ![Vite Badge][vite-badge]                | ![FastAPI Badge][fastapi-badge]   | ![SQLAlchemy Badge][sqlalchemy-badge] |
-| ![Styled Components Badge][styled-badge] | ![Pydantic Badge][pydantic-badge] |                                       |
-| ![React Router Badge][router-badge]      | ![Uvicorn Badge][uvicorn-badge]   |                                       |
 
 [react-badge]: https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black
 
 [vite-badge]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white
 
-[styled-badge]: https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white
-
-[router-badge]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
-
 [python-badge]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 
 [fastapi-badge]: https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white
-
-[pydantic-badge]: https://img.shields.io/badge/Pydantic-e92063?style=for-the-badge&logo=pydantic&logoColor=white
-
-[uvicorn-badge]: https://img.shields.io/badge/Uvicorn-27BEB6?style=for-the-badge&logo=uvicorn&logoColor=white
 
 [postgres-badge]: https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white
 
