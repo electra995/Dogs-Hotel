@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
-from database import engine
-import models as models
-from routers import profile, auth, hotel, reservation, review
+from app.database import engine
+import app.models as models
+from app.routers import profile, auth, hotel, reservation, review
 
 
 # ----------------- LIFESPAN -----------------
