@@ -24,7 +24,7 @@ import {
     Select,
 } from "./styles.ts";
 
-import DateRangePicker from "../../../components/DatePicker/DatePicker.jsx";
+import DateRangePicker from "../../../components/datePicker/DatePicker.jsx";
 import Navbar from "../../../components/navbar/Navbar.jsx";
 import Button from "../../../components/button/Button.jsx";
 import ReservationNav from "../../../components/reservationNav/ReservationNav.jsx";
