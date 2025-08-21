@@ -116,8 +116,8 @@ che lo gestirà.
 
 ### 4. Setup del Frontend
 
-Prima di avviare il frontend, è necessario modificare il file `Fronted/src/config/config.jsx` e commentare
-la riga con l'URL di Railway e usare il localhost.
+Prima di avviare il frontend, è necessario creare il file `Fronted/.env.local` e aggiungere la riga 
+`VITE_API_URL=http://localhost:8000`
 
 1. Apri un nuovo terminale e **naviga nella cartella del frontend**:
    ```bash

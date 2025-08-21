@@ -95,7 +95,7 @@ const PetRegister = () => {
 
     const handleBookingClick = () => {
         const requiredFields = [
-            "name", "age"
+            "name", "age", "type", "gender"
         ];
 
         const emptyFields = requiredFields.filter(
@@ -170,6 +170,7 @@ const PetRegister = () => {
                                             value={petProfile.type}
                                             onChange={handleChange}
                                         >
+                                            <option value="">Seleziona</option>
                                             <option value="1">Piccola</option>
                                             <option value="2">Media</option>
                                             <option value="3">Grande</option>
@@ -195,6 +196,7 @@ const PetRegister = () => {
                                             value={petProfile.gender}
                                             onChange={handleChange}
                                         >
+                                            <option value="">Seleziona</option>
                                             <option value="M">M</option>
                                             <option value="F">F</option>
                                         </Select>

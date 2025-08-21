@@ -77,7 +77,7 @@ const HotelDashboardPanel = () => {
                                     <GuestCard status={getPaymentStatus(guest.card)}>
                                         <GuestAvatar src={guest.user?.image_url || "/images/default-user.png"}/>
                                         <GuestName
-                                            status={getPaymentStatus(guest.card)}>{guest.user?.name || "Nome sconosciuto"}</GuestName>
+                                            status={getPaymentStatus(guest.card)}>{guest.user?.name} - {guest.pet_name}</GuestName>
                                         {guest.additional_services && guest.additional_services.length > 0 ? (
                                             guest.additional_services.map(serviceId => (
                                                 <GuestService key={serviceId} status={getPaymentStatus(guest.card)}>
@@ -108,7 +108,7 @@ const HotelDashboardPanel = () => {
                             <OccupantCard key={occupant.id}>
                                 <OccupantAvatar src={occupant.user?.image_url || "/images/user-profile.png"}/>
                                 <OccupantMiddleBox>
-                                    <OccupantName>{occupant.user?.name || "Nome sconosciuto"}</OccupantName>
+                                    <OccupantName>{occupant.user?.name} - {occupant.pet_name}</OccupantName>
                                     <OccupantServiceBox>
                                         {occupant.additional_services && occupant.additional_services.length > 0 ? (
                                             occupant.additional_services.map(serviceId => (
