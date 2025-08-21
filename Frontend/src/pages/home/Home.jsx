@@ -19,7 +19,7 @@ import LodgingCard from "../../components/lodgingCard/LodgingCard.jsx";
 import Button from "../../components/button/Button.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 
-import {AuthProvider, useAuth} from "../../context/AuthContext";
+import {AuthProvider, useAuth} from "../../context/authContext.jsx";
 import {useLodgings} from "../../context/lodgingContext.jsx";
 
 const HomeContent = () => {

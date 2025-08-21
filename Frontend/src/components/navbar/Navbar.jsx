@@ -10,7 +10,7 @@ import {
 import Button from "../button/Button.jsx";
 
 import {Link} from "react-router-dom";
-import {useAuth} from "../../context/AuthContext";
+import {useAuth} from "../../context/authContext.jsx";
 
 const Navbar = ({borderbottom}) => {
     const {user, logout} = useAuth();

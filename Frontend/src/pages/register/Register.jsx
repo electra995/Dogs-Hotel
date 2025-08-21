@@ -23,7 +23,7 @@ import {
 import Button from "../../components/button/Button.jsx";
 
 import {apiRegister} from '../../services/authService/AuthService.jsx';
-import {useAuth} from "../../context/AuthContext";
+import {useAuth} from "../../context/authContext.jsx";
 import {Link, useNavigate} from "react-router-dom";
 import {useState} from "react";
 

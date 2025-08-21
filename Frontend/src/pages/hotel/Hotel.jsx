@@ -49,7 +49,7 @@ import Review from "../../components/review/Review.jsx";
 import {useNavigate} from "react-router-dom";
 import {useEffect, useState, useMemo} from "react";
 import {useParams} from "react-router-dom";
-import {useAuth} from "../../context/AuthContext";
+import {useAuth} from "../../context/authContext.jsx";
 import {fetchHotelProfile} from "../../services/hotelService/HotelService.jsx";
 import {getReviews} from "../../services/reviewService/ReviewService.jsx";
 import {SERVICE_FEES, TOURIST_TAX, calculateTotalAmount, calculateTotalDays} from "../../utils/reservationUtils.ts";
