@@ -6,7 +6,7 @@ from app.schemas import (
     ReviewResponse,
 )
 
-router = APIRouter(prefix="/api/reviews", tags=["Review"])
+router = APIRouter(prefix="/reviews", tags=["Review"])
 
 
 @router.get("/", response_model=ReviewResponse)

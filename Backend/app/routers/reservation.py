@@ -8,7 +8,7 @@ from app.schemas import (
     ReservationWithUserResponse,
 )
 
-router = APIRouter(prefix="/api/reservations", tags=["Reservation"])
+router = APIRouter(prefix="/reservations", tags=["Reservation"])
 
 
 @router.get("/{hotel_id}", response_model=ReservationWithUserResponse)

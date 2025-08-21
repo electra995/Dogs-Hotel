@@ -4,7 +4,7 @@ from app.database import get_db
 from app.crud import hotel as hotel_crud
 from app.schemas import LodgingResponse, HotelBase, HotelProfileUpdate
 
-router = APIRouter(prefix="/api/lodgings", tags=["Hotel"])
+router = APIRouter(prefix="/lodgings", tags=["Hotel"])
 
 
 @router.get("/", response_model=LodgingResponse)

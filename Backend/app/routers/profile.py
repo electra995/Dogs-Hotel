@@ -4,7 +4,7 @@ from app.database import get_db
 from app.schemas import UserBase, UserProfileUpdate, ReservationResponse
 from app.crud import user as user_crud
 
-router = APIRouter(prefix="/api/users", tags=["User"])
+router = APIRouter(prefix="/users", tags=["User"])
 
 
 @router.get("/{user_id}", response_model=UserBase)

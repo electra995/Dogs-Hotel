@@ -4,7 +4,7 @@ from app.database import get_db
 from app.schemas import RegisterRequest, LoginRequest, UserBase
 from app.crud import user as user_crud
 
-router = APIRouter(prefix="/api/user", tags=["Auth"])
+router = APIRouter(prefix="/user", tags=["Auth"])
 
 
 @router.post("/register", response_model=UserBase)
