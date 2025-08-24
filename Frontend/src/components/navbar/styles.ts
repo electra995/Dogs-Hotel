@@ -28,19 +28,15 @@ export const LeftList = styled.div`
     font-weight: 600;
 
     @media (max-width: 1024px) {
-        width: 100%;
+        display: none;
     }
 `;
 
 export const Icon = styled.img`
     cursor: pointer;
-    width: 150px;
-    height: 150px;
-
-    @media (max-width: 1224px) {
-        width: 120px;
-        height: 120px;
-    }
+    width: 140px;
+    height: auto;
+   padding: 0 50px;
 `;
 
 export const LeftListItem = styled.li`
@@ -50,19 +46,45 @@ export const LeftListItem = styled.li`
         text-decoration: none;
         color: #0a846b;
     }
+`;
+
+export const RightContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 14px;
 
     @media (max-width: 1024px) {
         display: none;
     }
 `;
 
-export const RightContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
+export const HamburgerIcon = styled.img`
+    display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
 
     @media (max-width: 1024px) {
-        display: none;
+        display: block;
+    }
+`;
+
+export const MobileMenu = styled.div`
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 20;
+
+    a {
+        text-decoration: none;
+        color: #0a846b;
+        font-weight: 600;
     }
 `;

@@ -41,8 +41,8 @@ export const Icon = styled.img`
     display: block;
 
     @media (max-width: 768px) {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 `;
 
