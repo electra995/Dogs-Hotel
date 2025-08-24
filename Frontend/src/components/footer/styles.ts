@@ -35,8 +35,15 @@ export const FooterContainer = styled.div`
 `;
 
 export const Icon = styled.img`
-    width: ${(props) => (props.width ? props.width : "auto")};
+    width: ${(props) => (props.width ? props.width : "100%")};
     height: ${(props) => (props.height ? props.height : "auto")};
+    max-width: 100%;
+    display: block;
+
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+    }
 `;
 
 export const FooterRow = styled.div`
