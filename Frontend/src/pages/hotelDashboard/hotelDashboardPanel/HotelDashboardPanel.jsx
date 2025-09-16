@@ -102,7 +102,7 @@ const HotelDashboardPanel = () => {
             </FirstRow>
             <SecondRow>
                 <OccupantsBox>
-                    <OccupantsTitle>Occupanti attuali</OccupantsTitle>
+                    <OccupantsTitle>Ospiti attuali e passati</OccupantsTitle>
                     <OccupantsCardContainer>
                         {pastOccupants.map((occupant) => (
                             <OccupantCard key={occupant.id}>
